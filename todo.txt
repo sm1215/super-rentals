@@ -1,8 +1,8 @@
 Pick up from here:
 
-https://guides.emberjs.com/release/tutorial/installing-addons/
+https://guides.emberjs.com/release/tutorial/autocomplete-component/
 
-Tutorial Status: 5/12
+Tutorial Status: 9/12
 
 
 Questions: 
