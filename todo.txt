@@ -1,0 +1,14 @@
+Pick up from here:
+
+https://guides.emberjs.com/release/tutorial/installing-addons/
+
+Tutorial Status: 5/12
+
+
+Questions: 
+  1) In testing, there seems to be a disconnect of structure between the test files and the actual templates.
+  Any changes to templates would require the same structure to be re-coded in the test as well - so we are essentially duplicating code.
+  These structural changes apply to both data and markup.
+  Are there any alternatives to directly querying specific markup structure in testing? A shared configuration?
+  Any alternatives to just making up dummy data in the test itself?
+
