@@ -12,3 +12,6 @@ Questions:
   Are there any alternatives to directly querying specific markup structure in testing? A shared configuration?
   Any alternatives to just making up dummy data in the test itself?
 
+  2) In the list-filter component, a function is used to set a local reference to a variable, "this.set('variable', value)". What's the benefit of this method over just using "this.variable = value"?
+
+  
