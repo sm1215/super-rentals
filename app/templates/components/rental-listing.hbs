@@ -3,7 +3,7 @@
     onclick={{action "toggleImageSize"}} 
     class="image {{if isWide "wide"}}"
     role="button">
-    <img src="{{rental.image}}" alt="">
+      <img src={{rental.image}} alt="">
       <small>View Larger</small>
   </a>
   <div class="details">
@@ -21,4 +21,5 @@
       <span>Number of bedrooms:</span> {{rental.bedrooms}}
     </div>
   </div>
+  {{location-map location=rental.city}}
 </article>
