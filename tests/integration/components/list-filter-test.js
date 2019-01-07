@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render, settled, triggerKeyEvent, fillIn } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { resolve, allSettled } from 'rsvp';
+import { resolve } from 'rsvp';
 
 const ITEMS = [{city: 'San Francisco'}, {city: 'Portland'}, {city: 'Seattle'}];
 const FILTERED_ITEMS = [{city: 'San Francisco'}];

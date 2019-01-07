@@ -2,10 +2,10 @@ Pick up from here:
 
 https://guides.emberjs.com/release/tutorial/service/
 
-Tutorial Status: 10/12
+Tutorial Status: 12/12
 
-Leaving off at this section:
-"You may have noticed that this.location refers to a property location we haven't defined. This property will be passed in to the component by its parent template below."
+server startup with leaflet env var
+LEAFLET_MAPS_API_KEY=<key_here> ember s
 
 Questions: 
   1) In testing, there seems to be a disconnect of structure between the test files and the actual templates.
@@ -16,4 +16,3 @@ Questions:
 
   2) In the list-filter component, a function is used to set a local reference to a variable, "this.set('variable', value)". What's the benefit of this method over just using "this.variable = value"?
 
-  

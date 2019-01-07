@@ -2,12 +2,13 @@
   <a
     onclick={{action "toggleImageSize"}} 
     class="image {{if isWide "wide"}}"
-    role="button">
-      <img src={{rental.image}} alt="">
-      <small>View Larger</small>
+    role="button"
+  >
+    <img src={{rental.image}} alt="">
+    <small>View Larger</small>
   </a>
   <div class="details">
-    <h3>{{rental.title}}</h3>
+    <h3>{{#link-to "rentals.show" rental class=rental.id}}{{rental.title}}{{/link-to}}</h3>
     <div class="detail owner">
       <span>Owner:</span> {{rental.owner}}
     </div>

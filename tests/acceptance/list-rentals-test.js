@@ -25,7 +25,7 @@ module('Acceptance | list rentals', function(hooks) {
     this.owner.register('service:map-element', StubMapsService);
   });
 
-  test('should show rentals as the home page', async function(assert) {
+  test('should redirect to rentals route', async function(assert) {
     await visit('/');
     assert.equal(currentURL(), '/rentals', 'should redirect automatically');
   });
@@ -56,12 +56,10 @@ module('Acceptance | list rentals', function(hooks) {
   });
 
   test('should show details for a selected rental', async function(assert) {
-
-  });
-
-  test('visiting /', async function(assert) {
-    await visit('/');
-
-    assert.equal(currentURL(), '/');
+    await visit('/rentals');
+    await click('.grand-old-mansion');
+    assert.equal(currentURL(), '/rentals/grand-old-mansion', 'should navigate to show route');
+    assert.ok(this.element.querySelector('.show-listing h2').textContent.includes('Grand Old Mansion'), 'should list rental title');
+    assert.ok(this.element.querySelector('.show-listing .description'), 'should list a description of the property');
   });
 });
